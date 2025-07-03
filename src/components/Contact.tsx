@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Instagram, Linkedin, Github } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -38,20 +38,41 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "varchasvkumar3@gmail.com",
+      href: "mailto:varchasvkumar3@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      label: "Mobile",
+      value: "+91 6376858057",
+      href: "tel:+916376858057"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "India",
       href: "#"
+    }
+  ];
+
+  const socialLinks = [
+    {
+      icon: <Github className="w-5 h-5" />,
+      label: "GitHub",
+      value: "varchasv2005",
+      href: "https://github.com/varchasv2005"
+    },
+    {
+      icon: <Linkedin className="w-5 h-5" />,
+      label: "LinkedIn",
+      value: "varchasv-kumar-pandey",
+      href: "https://www.linkedin.com/in/varchasv-kumar-pandey/"
+    },
+    {
+      icon: <Instagram className="w-5 h-5" />,
+      label: "Instagram",
+      value: "@varchasv._",
+      href: "https://instagram.com/varchasv._"
     }
   ];
 
@@ -61,7 +82,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind? Let's work together to bring your ideas to life.
+            Have a project in mind or want to collaborate? Let's connect and bring innovative ideas to life.
           </p>
         </div>
 
@@ -70,13 +91,14 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Let's start a conversation</h3>
               <p className="text-muted-foreground mb-8">
-                I'm always interested in hearing about new projects and opportunities. 
-                Whether you're a company looking to hire, or you're someone with a great idea, 
-                I'd love to hear from you.
+                I'm always interested in hearing about new projects, opportunities, and collaborations. 
+                Whether you're a fellow student, a company looking for fresh talent, or someone with 
+                an innovative idea, I'd love to hear from you.
               </p>
             </div>
 
             <div className="space-y-4">
+              <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <div className="text-primary">{item.icon}</div>
@@ -84,6 +106,26 @@ const Contact = () => {
                     <p className="font-medium">{item.label}</p>
                     <a 
                       href={item.href}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {item.value}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold mb-4">Connect with me</h4>
+              {socialLinks.map((item, index) => (
+                <div key={index} className="flex items-center space-x-4">
+                  <div className="text-primary">{item.icon}</div>
+                  <div>
+                    <p className="font-medium">{item.label}</p>
+                    <a 
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {item.value}
@@ -133,7 +175,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me about your project or idea..."
                     rows={6}
                   />
                 </div>

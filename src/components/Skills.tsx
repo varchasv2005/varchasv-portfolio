@@ -6,30 +6,30 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming Languages",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "HTML/CSS", level: 98 }
+        { name: "Python", level: 90 },
+        { name: "Java", level: 85 },
+        { name: "JavaScript", level: 75 },
+        { name: "C++", level: 70 }
       ]
     },
     {
-      title: "Backend Development",
+      title: "AI/ML Technologies",
       skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 82 },
-        { name: "RESTful APIs", level: 90 }
+        { name: "Machine Learning", level: 85 },
+        { name: "Speech Recognition", level: 80 },
+        { name: "Text-to-Speech", level: 80 },
+        { name: "Data Analysis", level: 75 }
       ]
     },
     {
-      title: "Tools & Technologies",
+      title: "Development & Tools",
       skills: [
-        { name: "Git/GitHub", level: 95 },
-        { name: "Docker", level: 78 },
-        { name: "AWS", level: 75 },
-        { name: "Figma", level: 88 }
+        { name: "Object-Oriented Programming", level: 90 },
+        { name: "GUI Development (Swing)", level: 85 },
+        { name: "Git/GitHub", level: 80 },
+        { name: "Desktop Applications", level: 85 }
       ]
     }
   ];
@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Skills & Expertise</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+            Technologies and tools I use to bring AI-powered ideas to life
           </p>
         </div>
 

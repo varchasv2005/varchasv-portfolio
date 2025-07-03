@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -21,17 +21,17 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Your Name
+              Varchasv Kumar Pandey
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
-            Full Stack Developer & UI/UX Designer
+            AIML Undergraduate | Passionate Programmer | Tech Explorer
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-            I create beautiful, functional web applications that solve real-world problems. 
-            Passionate about clean code, user experience, and bringing ideas to life.
+            BTech in Computer Science (AIML) student with a passion for artificial intelligence, 
+            machine learning, and creating innovative solutions that solve real-world problems.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
@@ -44,13 +44,16 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6 mb-12 animate-fade-in">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
+            <a href="https://github.com/varchasv2005" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
               <Github size={28} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
+            <a href="https://www.linkedin.com/in/varchasv-kumar-pandey/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
               <Linkedin size={28} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
+            <a href="https://instagram.com/varchasv._" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
+              <Instagram size={28} />
+            </a>
+            <a href="mailto:varchasvkumar3@gmail.com" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:scale-110 transform">
               <Mail size={28} />
             </a>
           </div>

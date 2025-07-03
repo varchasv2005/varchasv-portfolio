@@ -1,24 +1,24 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Palette, Zap } from 'lucide-react';
+import { Code, Brain, Zap } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="w-8 h-8 text-primary" />,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that follows best practices"
+      icon: <Brain className="w-8 h-8 text-primary" />,
+      title: "AI/ML Focus",
+      description: "Specializing in artificial intelligence and machine learning technologies"
     },
     {
-      icon: <Palette className="w-8 h-8 text-primary" />,
-      title: "Design Focused",
-      description: "Creating beautiful, intuitive user interfaces and experiences"
+      icon: <Code className="w-8 h-8 text-primary" />,
+      title: "Clean Code",
+      description: "Writing maintainable, scalable code following best practices"
     },
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
-      title: "Performance",
-      description: "Optimizing applications for speed and efficiency"
+      title: "Innovation",
+      description: "Creating innovative solutions that solve real-world problems"
     }
   ];
 
@@ -28,26 +28,26 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate developer with a love for creating digital experiences that make a difference.
+            I'm a passionate BTech Computer Science (AIML) student with a love for creating digital experiences that make a difference.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              With over 5 years of experience in web development, I specialize in creating 
-              modern, responsive applications using the latest technologies. My journey started 
-              with a curiosity about how websites work, and it has evolved into a passion for 
-              crafting exceptional digital experiences.
+              Currently pursuing BTech in Computer Science with specialization in Artificial Intelligence 
+              and Machine Learning. My journey in technology started with curiosity about how intelligent 
+              systems work, and it has evolved into a passion for creating innovative AI-powered solutions.
             </p>
             
             <p className="text-lg leading-relaxed text-muted-foreground">
               I believe that great software is not just about functionality—it's about creating 
-              intuitive, beautiful, and accessible experiences that solve real problems for real people.
+              intelligent, intuitive, and accessible experiences that solve real problems for real people. 
+              My focus is on bridging the gap between complex AI technologies and practical applications.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'PostgreSQL'].map((tech) => (
+              {['Python', 'Java', 'Machine Learning', 'AI', 'Object-Oriented Programming', 'Speech Recognition'].map((tech) => (
                 <span key={tech} className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
                   {tech}
                 </span>
