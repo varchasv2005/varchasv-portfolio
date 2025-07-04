@@ -35,7 +35,7 @@ const Hero = () => {
           {/* ✅ Updated Button with download link */}
           <div className="flex justify-center mb-12 animate-fade-in">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1GdZDo6Weh-b11GSznUFF3RGzfzsEt9Wy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               download
