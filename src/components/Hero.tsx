@@ -34,10 +34,7 @@ const Hero = () => {
             machine learning, and creating innovative solutions that solve real-world problems.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
-            <Button size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 bg-primary hover:bg-primary/90 text-primary-foreground">
-              View My Work
-            </Button>
+          <div className="flex justify-center mb-12 animate-fade-in">
             <Button variant="outline" size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 border-primary/50 hover:border-primary hover:bg-primary/10">
               Download Resume
             </Button>
