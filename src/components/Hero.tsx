@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,7 +12,6 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
-      {/* Background gradient with green accents */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-primary/5"></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -34,10 +32,22 @@ const Hero = () => {
             machine learning, and creating innovative solutions that solve real-world problems.
           </p>
 
+          {/* ✅ Updated Button with download link */}
           <div className="flex justify-center mb-12 animate-fade-in">
-            <Button variant="outline" size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 border-primary/50 hover:border-primary hover:bg-primary/10">
-              Download Resume
-            </Button>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 border-primary/50 hover:border-primary hover:bg-primary/10"
+              >
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-6 mb-12 animate-fade-in">
@@ -57,7 +67,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <button
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors duration-200 animate-bounce"
