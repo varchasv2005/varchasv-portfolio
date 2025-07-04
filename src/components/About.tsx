@@ -23,7 +23,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/50">
+    <section id="about" className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
@@ -48,7 +48,7 @@ const About = () => {
 
             <div className="flex flex-wrap gap-3 mt-8">
               {['Python', 'Java', 'Machine Learning', 'AI', 'Object-Oriented Programming', 'Speech Recognition'].map((tech) => (
-                <span key={tech} className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                <span key={tech} className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium border border-primary/30">
                   {tech}
                 </span>
               ))}
@@ -57,7 +57,7 @@ const About = () => {
 
           <div className="space-y-6">
             {highlights.map((item, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-200">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-200 bg-card/50 border-border hover:border-primary/50">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">{item.icon}</div>

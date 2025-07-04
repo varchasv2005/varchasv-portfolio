@@ -12,15 +12,15 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5"></div>
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
+      {/* Background gradient with green accents */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-primary/5"></div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent">
               Varchasv Kumar Pandey
             </span>
           </h1>
@@ -35,10 +35,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
-            <Button size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200">
+            <Button size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 bg-primary hover:bg-primary/90 text-primary-foreground">
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-3 hover:scale-105 transition-transform duration-200 border-primary/50 hover:border-primary hover:bg-primary/10">
               Download Resume
             </Button>
           </div>
